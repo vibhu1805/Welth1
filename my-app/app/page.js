@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import HeroSection from '@/components/ui/hero'
 
 export default function Home() {
@@ -6,4 +7,10 @@ export default function Home() {
       <HeroSection/>
     </div>
   );
+=======
+import Image from "next/image";
+
+export default function Home() {
+  return <div></div>
+>>>>>>> finance-app/main
 }
