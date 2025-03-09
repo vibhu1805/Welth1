@@ -7,7 +7,7 @@ import { CreateAccountDrawer } from "@/components/create-account-drawer";
 import { BudgetProgress } from "./_components/budget-progress";
 import { Card, CardContent } from "@/components/ui/card";
 import { Plus } from "lucide-react";
-// import { DashboardOverview } from "./_components/transaction-overview";
+import { DashboardOverview } from "./_components/transaction-overview";
 
 export default async function DashboardPage() {
   const [accounts, transactions] = await Promise.all([
@@ -31,13 +31,11 @@ export default async function DashboardPage() {
         currentExpenses={budgetData?.currentExpenses || 0}
       />
 
-      {/* Commented because this file has yet not been created so was giving errors - ISHI */}
-
       {/* Dashboard Overview */}
-      {/* <DashboardOverview
+      <DashboardOverview
         accounts={accounts}
         transactions={transactions || []}
-      /> */}
+      />
 
       {/* Accounts Grid */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
