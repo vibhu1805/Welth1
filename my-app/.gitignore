@@ -44,6 +44,6 @@ next-env.d.ts
 node_modules
 .next
 .env.local
-
+.env
 .env.*.local
 >>>>>>> finance-app/main
